@@ -1,0 +1,14 @@
+print("Digite os itens da lista de compras (Insira 0 para mostrar a lista): ")
+lista_de_compras = []
+
+item = "1"
+while item != 0:
+  item = input();
+  if item == "0":
+    print(lista_de_compras)
+    break
+  else:
+    lista_de_compras.append(item)
+
+for item in lista_de_compras:
+  print(item)
