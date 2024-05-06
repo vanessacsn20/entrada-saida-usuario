@@ -1,7 +1,12 @@
-idade = 25
-nome = "Alice"
-cidade = "São Paulo"
+def info():
+  idade = 25
+  nome = "Alice"
+  cidade = "São Paulo"
 
-print("Nome:", nome, sep=" ", end=" - ")
-print("Idade:", idade, end=" - ")
-print("Cidade:", cidade, end="!")
+  print("Nome:", nome, sep=" ", end=" - ")
+  print("Idade:", idade, end=" - ")
+  print("Cidade:", cidade, end="!")
+
+  return 0
+
+info()
