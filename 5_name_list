@@ -1,0 +1,16 @@
+def criar_lista_de_nomes():
+  print("Digite nomes (Insira 'sair' para mostrar a lista): ")
+  index = 0
+  lista = []
+  item = "1"
+  while item != "sair":
+    item = input()
+    if item == "sair":
+      break
+    else:
+      lista.append(item)
+  for item in lista:
+    print(item)
+  return 0;
+
+criar_lista_de_nomes()
