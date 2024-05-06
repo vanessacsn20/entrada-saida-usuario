@@ -1,0 +1,7 @@
+idade = 25
+nome = "Alice"
+cidade = "São Paulo"
+
+print("Nome:", nome, sep=" ", end=" - ")
+print("Idade:", idade, end=" - ")
+print("Cidade:", cidade, end="!")
