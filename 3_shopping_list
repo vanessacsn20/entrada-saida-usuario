@@ -1,14 +1,17 @@
-print("Digite os itens da lista de compras (Insira 0 para mostrar a lista): ")
-lista_de_compras = []
+def criar_lista_de_compras():
+  print("Digite os itens da lista de compras (Insira 0 para mostrar a lista): ")
+  index = 0
+  lista_de_compras = []
+  item = "1"
+  while item != 0:
+    item = input()
+    if item == "0":
+      break
+    else:
+      lista_de_compras.append(item)
+  for item in lista_de_compras:
+    index += 1
+    print("Item ", index, ": ", item, sep="")
+  return 0;
 
-item = "1"
-while item != 0:
-  item = input();
-  if item == "0":
-    print(lista_de_compras)
-    break
-  else:
-    lista_de_compras.append(item)
-
-for item in lista_de_compras:
-  print(item)
+criar_lista_de_compras()
