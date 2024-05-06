@@ -1,18 +1,23 @@
-num1 = int(input("Numero 1: "))
-num2 = int(input("Numero 2: "))
-operador = input("Insira o operador (+ , - , *, /): ")
+def  opera_numeros():
 
-if operador != "+" and operador != "-" and operador != "*" and operador != "/":
-  print("Operador inválido")
+  num1 = int(input("Numero 1: "))
+  num2 = int(input("Numero 2: "))
+  operador = input("Insira o operador (+ , - , *, /): ")
 
-if operador == "+":
-  print(num1 + num2)
+  if operador != "+" and operador != "-" and operador != "*" and operador != "/":
+    print("Operador inválido")
 
-if operador == "-":
-  print(num1 - num2)
+  if operador == "+":
+    print(num1 + num2)
 
-if operador == "*":
-  print(num1 * num2)
+  if operador == "-":
+    print(num1 - num2)
 
-if operador == "/":
-  print(num1 / num2)
+  if operador == "*":
+    print(num1 * num2)
+
+  if operador == "/":
+    print(num1 / num2)
+  return 0
+
+opera_numeros()
